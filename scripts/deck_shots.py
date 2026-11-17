@@ -16,6 +16,8 @@ import subprocess
 import sys
 import tempfile
 
+from fonts import font_environment
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -37,7 +39,7 @@ def main() -> int:
     with tempfile.TemporaryDirectory() as tmp:
         subprocess.run(
             ["soffice", "--headless", "--convert-to", "pdf", str(src), "--outdir", tmp],
-            check=True, capture_output=True, timeout=300,
+            check=True, capture_output=True, timeout=300, env=font_environment(),
         )
         pdf = pathlib.Path(tmp) / (src.stem + ".pdf")
         if not pdf.exists():

@@ -18,6 +18,8 @@ import shutil
 import subprocess
 import sys
 
+from fonts import font_css
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOKENS = ROOT / "references" / "tokens.css"
 
@@ -34,7 +36,7 @@ FOOTER = """
 
 def inline_tokens(html: str) -> str:
     """Replace the stylesheet link (or TOKENS_PATH placeholder) with inline CSS."""
-    css = TOKENS.read_text(encoding="utf-8")
+    css = font_css() + "\n" + TOKENS.read_text(encoding="utf-8")
     block = f"<style>\n{css}\n</style>"
 
     html = html.replace("TOKENS_PATH", TOKENS.as_uri())

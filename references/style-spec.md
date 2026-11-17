@@ -54,12 +54,12 @@ Three failure modes to avoid:
 
 Rules:
 
-- Burgundy appears **once per visual block**. Four accents in one viewport is a
-  failure, not a feature.
+- Burgundy appears **once per visual block**. Repeated rules across a principle grid are intentional; avoid competing
+  emphasis within each block.
 - Green never competes with burgundy. It is a background/support color.
 - Accent fills (burgundy background, white text on burgundy) are reserved for
   one element per page — the kicker band, the CV/download block, the close.
-- Body text contrast is checked against `--paper`, never against `--paper-warm`.
+- Check text contrast against the actual surface, including `--paper-warm`.
 
 ---
 
@@ -82,8 +82,8 @@ Georgia is unavailable and the layout must not shift.
 values in narrative sections, list items.
 
 **Inter carries the metadata.** Kicker lines, section notes, dates, categories,
-card descriptions, page furniture, chart labels. Always uppercase, always
-letterspaced, always small. Inter is never used for a long paragraph.
+card descriptions, page furniture, chart labels. Metadata labels are uppercase, letterspaced and small. Card descriptions
+and principle explanations use sentence-case sans text.
 
 ### Web scale
 
@@ -128,7 +128,7 @@ Display `0.98` · H2 `1.15` · H3 `1.1` · lede `1.57` · body `1.62` · card `1
   featured item is wider and carries a `3px` burgundy top rule); `.8 / 1.2` for
   About blocks (label column, body column).
 - Document: A4, margins `20mm` top / `22mm` sides / `18mm` bottom.
-- Slides: 16:9, `13.333in × 7.5in`, outer margin `0.9in`, content grid 12
+- Slides: 16:9, `13.333in × 7.5in`, outer margin `0.95in`, content grid 12
   columns with `0.22in` gutters.
 
 ---
@@ -199,7 +199,8 @@ Applies to long-form texts, deck copy, document prose.
 - Title block: kicker, display title, lede, then a hairline, then meta line
   (author · role · date · reading time) in Inter 10px.
 - Body at 10.5pt / 1.58, full measure, no column splits.
-- Two-column grids only for principle sets and figure+caption pairs.
+- Four-column principle grids match the reference document; use two columns
+  for figure+caption pairs or when content needs more room.
 - Running footer: `FROM THE TRENCHES` left, page number right, Inter 8px
   uppercase `--muted-light`, hairline above.
 - Section starts get `break-inside: avoid` on their first heading block so a
@@ -208,12 +209,14 @@ Applies to long-form texts, deck copy, document prose.
 
 ### 7.3 Slides (`scripts/build_deck.py`)
 
-- 16:9. Paper ground, never white. A full-bleed `0.75in` burgundy rule at the
+- 16:9. Paper ground, never white. A full-width `0.055in` burgundy rule at the
   very top of content slides is the deck's spine.
 - **Title slide**: kicker (burgundy) → display title (serif, 44–54pt) →
   thin rule → lede → signature block bottom-left.
 - **One idea per slide.** If a slide has two headlines, cut one.
-- Body text never below 14pt; meta never below 10pt.
+- Narrative body text should stay at least 14pt; supporting descriptions in
+  the reference use smaller type. Metadata is typically 10–11pt, with 9pt
+  footers and chart labels. Prefer larger type for projected presentations.
 - 4-col principle grid mirrors the web grid: `2px` burgundy top rule, grey
   numeral, serif title.
 - Charts: no chart junk. Gridlines in `--rule`, axis labels in Inter 9–10pt,
@@ -267,3 +270,11 @@ h1 { font-weight: 400; letter-spacing: -0.055em; line-height: .98; }
 .principle { border-top: 2px solid #8D2829; }
 .quote { border-left: 4px solid #D8D4CA; font-style: italic; }
 ```
+
+## 10. Evidence and legacy exceptions
+
+See `samples/validation.md`. Original samples are preserved unchanged even
+where they diverge from idealized rules: ink web masthead, bold article titles,
+serif principle numerals and small slide supporting copy. New work should
+follow the intended hierarchy unless faithful reproduction is requested.
+Gelasio and Georgia are not guaranteed to wrap identically across engines.

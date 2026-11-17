@@ -1,0 +1,159 @@
+[
+  {
+    "file": "Gelasio-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+    "source_sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+    "sha256": "3691ba89882cf2bfc6907e73315ed178e09bf080b2752e59ac6343cbd63704c2",
+    "axes": {
+      "wght": 400
+    }
+  },
+  {
+    "file": "Gelasio-Medium.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+    "source_sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+    "sha256": "59e30298a21ff5f3059052f36994875369d2afbf105ef2c93bf2290e84e84db1",
+    "axes": {
+      "wght": 500
+    }
+  },
+  {
+    "file": "Gelasio-SemiBold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+    "source_sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+    "sha256": "93fc843463bb89acfb6b531a6ba1058d91a45112abf9637a6a1dd0393577e334",
+    "axes": {
+      "wght": 600
+    }
+  },
+  {
+    "file": "Gelasio-Bold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+    "source_sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+    "sha256": "592981fe61f82d316c8edbe45efe68d3f63a474286d52ef98cfc3aff4ae6fe12",
+    "axes": {
+      "wght": 700
+    }
+  },
+  {
+    "file": "Gelasio-RegularItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio-Italic%5Bwght%5D.ttf",
+    "source_sha256": "52559e845a4d33514e5f93bb9ae7dbeae1894a53f2c565a15f18af40cd337c09",
+    "sha256": "be5d23c5c2bb6764637a06890e87ef807359dc0753d308bfc3eed84e5d0b050e",
+    "axes": {
+      "wght": 400
+    }
+  },
+  {
+    "file": "Gelasio-MediumItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio-Italic%5Bwght%5D.ttf",
+    "source_sha256": "52559e845a4d33514e5f93bb9ae7dbeae1894a53f2c565a15f18af40cd337c09",
+    "sha256": "4fac58f042f2cd9facc3e9db17ea31d602af14937eb7360327f023222ba8018f",
+    "axes": {
+      "wght": 500
+    }
+  },
+  {
+    "file": "Gelasio-SemiBoldItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio-Italic%5Bwght%5D.ttf",
+    "source_sha256": "52559e845a4d33514e5f93bb9ae7dbeae1894a53f2c565a15f18af40cd337c09",
+    "sha256": "b3c5540784ac879b1175ddd7fd497e041b54509e12ad4b681192871cfb7874b2",
+    "axes": {
+      "wght": 600
+    }
+  },
+  {
+    "file": "Gelasio-BoldItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gelasio/Gelasio-Italic%5Bwght%5D.ttf",
+    "source_sha256": "52559e845a4d33514e5f93bb9ae7dbeae1894a53f2c565a15f18af40cd337c09",
+    "sha256": "04aa1ee947674742fcbdc96485e303dda6fd4970e116b8e2b47d295b51eded48",
+    "axes": {
+      "wght": 700
+    }
+  },
+  {
+    "file": "Inter-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "sha256": "85c82266d51f8aae5be7ec91d4fe5d66d948039a4983ac7d564df80ff1b6c728",
+    "axes": {
+      "wght": 400,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-Medium.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "sha256": "a769cc0d61bf73ef9c41f390138aec6c9d6518e60234d0cf15b8df885a16fda0",
+    "axes": {
+      "wght": 500,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-SemiBold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "sha256": "dc9bb6403156533832eea5fb04152748058f8fe95514f91812949fe99bc92269",
+    "axes": {
+      "wght": 600,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-Bold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "sha256": "5efd95331668c8e054235b920d1671db90c4444b6157e1816c206c3e55235486",
+    "axes": {
+      "wght": 700,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-RegularItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+    "sha256": "bca864cd8a0493cdb5e96712eb0d4fff2f30a8af027bd0b87335b120b13f51ef",
+    "axes": {
+      "wght": 400,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-MediumItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+    "sha256": "31a74a47e1df020cb334d108f9cf29c381dc6ff18915c4352290f90e5f72edff",
+    "axes": {
+      "wght": 500,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-SemiBoldItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+    "sha256": "391fe2960b4f6b0237a5edcfba4c2af3feec9440e71cf1d3ef21da87f6dd7e83",
+    "axes": {
+      "wght": 600,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "Inter-BoldItalic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+    "source_sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+    "sha256": "52a4d192e8b1d9c71507eff2140eeec17fca3b42a594f75eb1347a8539367291",
+    "axes": {
+      "wght": 700,
+      "opsz": 14
+    }
+  },
+  {
+    "file": "IBMPlexMono-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+    "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+  }
+]

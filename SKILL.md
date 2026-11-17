@@ -38,6 +38,22 @@ Do not force a visual treatment into plain text, code or structured data.
 Preserve factual meaning and supplied wording during visual-only restyling.
 Never claim this repository automatically configures every agent or account.
 
+## Reference samples and verification
+
+Read `samples/README.md` and inspect the relevant original PNGs before visual
+work. `samples/original/` contains the untouched source guide, PDFs, PPTX,
+HTML and reference images; `samples/validation.md` records known mismatches.
+Run `python scripts/fonts.py` to verify bundled-font discovery on Linux.
+The sample copy is illustrative, not evidence of the user's biography.
+
+Run `python scripts/verify_samples.py` to verify source checksums, shared CSS
+and the generated slide structure against the original PPTX. This is a
+structural check, not pixel-level or semantic proof for new work. Render and
+inspect new output separately. Use the bundled OFL fonts in `fonts/`; see `fonts/README.md`. HTML renderers
+embed them; slide previews use project-local Fontconfig. Exact appearance
+still depends on font version and rendering engine;
+never claim visual equivalence when fallbacks or assets are missing.
+
 ## Inputs to collect
 
 - **Medium**: web page, document/PDF, slides, or long-form text. Changes the
@@ -64,9 +80,10 @@ Never claim this repository automatically configures every agent or account.
    - Document → `templates/document.html`. Pages are fixed-height
      (`width:210mm; height:297mm; overflow:hidden`), so **content that
      overflows is silently clipped** — check the rendered PNGs every time and
-     trim copy, never shrink type below 10.5pt.
+     split or reflow content, never shrink narrative body type below 10.5pt.
+     Preserve supplied wording unless editing is authorized.
    - Slides → `scripts/build_deck.py`. Edit the content lists inside `build()`
-     rather than starting a new file, so the deck keeps the system.
+     in a working copy, keeping canonical source unchanged.
    - Long-form text → no template; apply the typography and voice rules in
      Markdown.
 
@@ -74,7 +91,7 @@ Never claim this repository automatically configures every agent or account.
    what activates the print type scale in `tokens.css`. Without it the document
    silently renders at web scale.
 
-4. **Write the copy in the AG voice** (see `references/style-spec.md` §6):
+4. **For new or requested rewritten copy, use the AG voice** (see `references/style-spec.md` §6):
    declarative not promotional, concrete nouns over abstractions, past tense for
    experience and present for principles, sentence-case headings. Avoid
    leverage/synergy/robust/journey/unlock.
@@ -107,10 +124,9 @@ Never claim this repository automatically configures every agent or account.
   a figure. Never reduce body type below 10.5pt and never let `overflow:hidden`
   crop a sentence silently.
 - **Georgia is usually not installed**: the CSS stack falls back to Gelasio,
-  which is metric-compatible, so layout does not shift. Install Gelasio
-  (`font-weight` 700 must map to `Gelasio-Bold`, not a synthetic bold) and
-  use a project-local font configuration if an alias is needed; do not silently
-  change system or user font settings.
+  which is intended as a compatible substitute; verify line wrapping. Bundled Gelasio faces include a real bold. HTML rendering embeds them and
+  slide conversion uses the project-local alias automatically. Do not change
+  system or user font settings.
 - **`--no-footer` for `render.py`**: document templates carry their own running
   footer with a hard-coded page number. Without the flag you get a second,
   duplicated footer.
@@ -122,7 +138,7 @@ Never claim this repository automatically configures every agent or account.
   fall back to `soffice --headless --convert-to pdf` for decks and report that
   the PDF path was not used.
 - **Georgia missing** on the target machine: the CSS stack falls back to
-  Gelasio, which is metric-compatible. Install it rather than letting the page
+  Gelasio. Verify its actual availability before rendering rather than letting the page
   fall back to Times.
 - **PPTX opened elsewhere without Gelasio/Inter**: Georgia and Inter are the
   declared fonts, so the file stays correct on any machine with them; render
@@ -145,3 +161,13 @@ Never claim this repository automatically configures every agent or account.
 **Output** — `templates/page.html` as the base: keep the masthead, hero with
 the copy card, 4-column principle grid, 1.16/1/1 writings grid and the
 `.8/1.2` about band; replace only the content.
+
+## Sample-specific exceptions
+
+The original web masthead is ink, article titles retain browser-bold serif,
+and principle numerals inherit serif from the broad span selector. These are
+legacy sample exceptions, not universal brand rules. For new work prefer the
+explicit token classes (regular serif headings; sans metadata/numerals), while
+faithful sample reproduction preserves the original. The original hero image
+was not in the shared archive; use a supplied image or an intentional plain
+background, and disclose that exact web reproduction is unavailable.

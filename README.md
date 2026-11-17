@@ -44,8 +44,11 @@ python scripts/deck_shots.py build/deck.pptx build/deck-shots --pdf
 ```
 
 PDF page images require Poppler (`pdftoppm`); slide previews also require
-LibreOffice (`soffice`). Install Georgia or Gelasio and Inter through trusted
-font sources. Fonts are not bundled; fallback fonts may change layout, so
+LibreOffice (`soffice`). Gelasio, Inter and IBM Plex Mono are bundled with their OFL licenses in
+`fonts/`. HTML embeds them and Linux slide rendering uses a project-local
+Fontconfig alias; no system installation is needed. PowerPoint users should
+install the bundled fonts locally or use the rendered PDF. Font versions may
+change layout, so
 inspect rendered pages and slides for overflow before delivery.
 
 The templates contain reference content. Copy them for real work; keep the
@@ -60,3 +63,14 @@ created November 7, 2026 from alexandrugris.ro and alexandrugris.github.io.
 Packaged November 17, 2026 with agent adoption guidance, a writing baseline,
 shared palette loading, dependency declarations and validation. Original
 layout assets were preserved; brand defaults remain adaptable.
+
+## Reference gallery and validation
+
+The [sample gallery](samples/README.md) includes the original style-guide PDF,
+document PDF/HTML, slide PDF/PPTX, web HTML and twelve PNG reference images.
+See [validation results](samples/validation.md) for sample comparisons, corrected
+rules, font substitutions and the missing original hero-image dependency.
+
+```sh
+python scripts/verify_samples.py
+```
