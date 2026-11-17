@@ -43,7 +43,8 @@ def main() -> int:
             viewport={"width": args.width, "height": args.height},
             device_scale_factor=args.scale,
         )
-        page.goto(tmp.as_uri(), wait_until="networkidle")
+        page.set_content(html, wait_until="networkidle")
+        page.evaluate("document.fonts.ready")
         page.wait_for_timeout(400)
         page.screenshot(path=str(out), full_page=args.full)
         browser.close()

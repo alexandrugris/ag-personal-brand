@@ -75,7 +75,8 @@ def to_pdf(src: pathlib.Path, out: pathlib.Path, footer: bool) -> None:
             args=["--font-render-hinting=none", "--force-color-profile=srgb"],
         )
         page = browser.new_page()
-        page.goto(tmp.as_uri(), wait_until="networkidle")
+        page.set_content(html, wait_until="networkidle")
+        page.evaluate("document.fonts.ready")
         page.emulate_media(media="print")
         page.pdf(
             path=str(out),
