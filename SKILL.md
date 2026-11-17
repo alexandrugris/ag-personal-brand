@@ -171,3 +171,7 @@ explicit token classes (regular serif headings; sans metadata/numerals), while
 faithful sample reproduction preserves the original. The original hero image
 was not in the shared archive; use a supplied image or an intentional plain
 background, and disclose that exact web reproduction is unavailable.
+
+Run `python scripts/audit_assets.py` before distributing the skill; it verifies
+all shipped asset hashes and Git tracking. The maintained web template uses an
+intentional plain background, so it has no missing hero-image dependency.

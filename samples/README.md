@@ -30,3 +30,5 @@ Page and slide PNGs are in `regenerated/document/` and `regenerated/slides/`.
 These show the maintained toolkit with bundled fonts; they do not replace
 the original references. The web preview intentionally exposes the missing
 hero image rather than substituting an unrelated photograph.
+
+[Original toolkit ZIP](original/ag-trenches-style-kit.zip) is preserved too.

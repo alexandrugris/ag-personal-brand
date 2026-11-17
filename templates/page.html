@@ -14,7 +14,8 @@
   /* ---------- hero ---------- */
   .hero { position: relative; display: flex; align-items: flex-end; min-height: 620px;
           padding: 72px max(7%, calc((100% - 1180px)/2));
-          background: #CFD9CD url("assets/hero-city-park.webp") center/cover no-repeat;
+          /* Original photograph was not supplied; deliberate asset-free fallback. */
+          background: #CFD9CD;
           isolation: isolate; }
   .hero::before { content: ""; position: absolute; z-index: -1; inset: 0;
     background: linear-gradient(90deg, rgba(21,31,25,.47), rgba(21,31,25,.08) 72%); }

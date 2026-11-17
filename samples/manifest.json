@@ -91,6 +91,11 @@
       "path": "original/slide-9.png",
       "sha256": "077a19a3cd2c2635f6571de81df2f5f03a04c535afe28263bc6c72bf58677bfe",
       "bytes": 48494
+    },
+    {
+      "path": "original/ag-trenches-style-kit.zip",
+      "sha256": "4018e9b3b762babb0dfbe3efef2c37baa007a27c15c1a1d668af2b3972cf3a4c",
+      "bytes": 33046
     }
   ]
 }

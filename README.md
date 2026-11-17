@@ -74,3 +74,7 @@ rules, font substitutions and the missing original hero-image dependency.
 ```sh
 python scripts/verify_samples.py
 ```
+
+For a complete offline Git asset audit, run `python scripts/audit_assets.py`.
+The maintained web template intentionally uses a plain hero background; the
+original photograph was never supplied. Original references remain untouched.
